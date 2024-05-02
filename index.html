@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Text Encryption and Decryption </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link href="style.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+<body>
+  
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered"> Text Encryption and Decryption </h1>
+      <div class="columns">
+        <div class="column">
+        
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" id="inputText" placeholder="Enter your text to encrypt or decrypt" rows="3"></textarea>
+            </div>
+            <div style="margin-bottom: 20px;"></div>
+            <div class="control">
+              <input class="textarea" type="password" id="secretKeyInput" rows="3" placeholder="Enter your Secret Key">
+            </div>
+          </div>
+          <div style="margin-bottom: 20px;"></div>
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" id="resultText" readonly rows="3"></textarea>
+            </div>
+          </div>
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-primary" id="encryptButton">Encrypt</button>
+            </div>
+            <div class="control">
+              <button class="button is-danger" id="decryptButton">Decrypt</button>
+            </div>
+            <div class="control">
+              <button class="button is-warning" id="clearButton">Clear</button>
+            </div>
+          </div>
+        </br>
+          
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
